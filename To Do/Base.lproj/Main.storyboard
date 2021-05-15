@@ -97,6 +97,9 @@
                                 <rect key="frame" x="170" y="434" width="74" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="EhI-1L-gGV" eventType="touchUpInside" id="7qy-at-oT2"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oDi-Su-hHX">
                                 <rect key="frame" x="182" y="376" width="52" height="31"/>
@@ -124,6 +127,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2tr-Qx-Qlh"/>
+                    <connections>
+                        <outlet property="importantSwitch" destination="oDi-Su-hHX" id="zB1-Op-3Jy"/>
+                        <outlet property="titleTextField" destination="PTF-u5-CMv" id="B1w-LG-jCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mB-v5-QhG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,6 +154,9 @@
                                 <rect key="frame" x="171" y="352" width="72" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="Bd3-Be-Heh" eventType="touchUpInside" id="HIg-5M-N4e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xvp-c8-cX6"/>
@@ -161,6 +171,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pkl-qN-NgF"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="vJj-3t-ddb" id="0NF-fm-2Td"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpG-8e-Bb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

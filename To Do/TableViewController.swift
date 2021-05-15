@@ -28,10 +28,7 @@ class TableViewController: UITableViewController {
     }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+  
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -61,6 +58,7 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addVC = segue.destination as? AddToDoViewController {
             addVC.previousVC = self
+        }
             if let completeVC = segue.destination as? CompleteToDoViewController {
                 if let toDo = sender as? ToDo {
                   completeVC.selectedToDo = toDo
@@ -71,7 +69,7 @@ class TableViewController: UITableViewController {
     }
        
 }
-    }
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
       // this gives us a single ToDo
@@ -79,4 +77,5 @@ class TableViewController: UITableViewController {
 
       performSegue(withIdentifier: "moveToComplete", sender: toDo)
     }
+
 }

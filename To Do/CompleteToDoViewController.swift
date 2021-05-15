@@ -18,7 +18,7 @@ class CompleteToDoViewController: UIViewController {
         // Do any additional setup after loading the view.
     
     
-    @IBAction func completeTapped(_ sender: Any) {
+    @IBAction func completeTapped(_ sender: UIButton) {
              }
     /*
     // MARK: - Navigation

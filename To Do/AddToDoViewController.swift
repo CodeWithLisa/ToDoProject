@@ -22,7 +22,7 @@ class AddToDoViewController: UIViewController {
     }
 
     
-    @IBAction func addTapped(_ sender: Any) {
+    @IBAction func addTapped(_ sender: UIButton) {
         let toDo = ToDo()
 
           if let titleText = titleTextField.text {
